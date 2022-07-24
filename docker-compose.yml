@@ -20,7 +20,7 @@ services:
     image: "coolasshonky/multi-worker"
     mem_limit: 128m
     hostname: worker
-    envirnment:
+    environment:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
   nginx:
